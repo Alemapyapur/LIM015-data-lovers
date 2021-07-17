@@ -1,0 +1,329 @@
+*{
+    margin: 0 ;
+}
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (min-width:700px) {
+    nav ul{
+        display:flex;
+        justify-content: space-around;
+    }
+    detalles {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+body {
+    background: url(img/fondopika.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* navegador*/
+
+.menu-font-std ul{
+    list-style:none;
+    display:flex;
+    background-color: #6EA4BB;
+}
+
+.calc-area {
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 197px;
+    margin: 4px;
+}
+
+.logo1 {
+    width: 90%;
+}
+
+.logo2 {
+    width: 100%;
+}
+
+.name-search, .filter-type , .filter-weakness , .order-search {
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.name-pokemon, .filter-type-select , .filter-weakness-select , .order-search {
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: #6EA4BB;
+    text-align: center;
+    font-family:fantasy;
+    padding: 2px;
+}
+
+.h2 {
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.menu-font-std li{
+    border-right:1px solid #fff;
+    text-align:center;
+    flex-grow:1;
+}
+
+.menu-font-std li:hover{
+    background: whitesmoke;
+    border-color: solid 1em black;
+    font-family:fantasy;
+    cursor:pointer;
+}
+
+.menu-font-std li a{
+    display:block;
+    padding:15px 20px;
+    color:#E7E7E6;
+    font-family:fantasy;
+    font-weight:normal;
+}
+
+.menu-font-std li a:hover{
+    color:rgb(8, 8, 8);
+}
+
+/* barra de filtrados */
+.menu2 {
+    width: auto;
+    height: auto;
+    max-width: 95%;
+    border-radius: 0.4em;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    margin: 20px 0px 0px 20px;
+    border:0.3em solid;
+    border-color: #6EA4BB;
+}
+
+/* contenedores de index e inicio*/
+
+.backgray, .contenedor  {
+    background-color: #6EA4BB;
+}
+
+.contenedor {
+    width: 40vw;
+    border-radius: 20px;
+    margin: 20px 20px 20px 20px;
+    margin-inline: 25%;
+    text-align: center;
+    padding: 40px;
+    align-content: space-between;
+    display: block;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+
+.btn-go {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    background-color: #f5f5f580;
+    margin-top: 40px;
+}
+
+.btn-top {
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    position: fixed;
+}
+
+.btn-top-font {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border-color: rgb(70, 70, 69);
+    color: rgb(39, 37, 37);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.button:hover, .btn-go:hover {
+    text-decoration: none;
+    color: #4769ff;
+    background-color: #f11010cc;
+    transform: scale(1.08);
+}
+
+/*estilos de card*/
+
+.main-poke {
+    width: auto;
+    height: auto;
+    max-width: 95%;
+    border-radius: 20px;
+    right: 100px;
+    text-align: center;
+    align-content: space-between;
+    font-family: 'Lucida Sans Unicode';
+    display: flex;
+    align-self: center;
+    margin: 20px;
+    margin-left: 120px;
+    padding: 20px;
+}
+
+.pokes-img {
+    width: 70%;
+    height: auto;
+    align-content: center;
+}
+
+/* .column-modal backgray {
+    font-family: monospace;
+    color: tomato;
+} */
+
+.extras {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(17, 16, 16);
+    background-color: #cadce4;
+    width: 325px;
+    height: 520px;
+}
+
+.column, .column-modal {
+    align-content: center;
+    margin: 10px;
+    font-family: Arial;
+    border-radius: 20px;
+    border-color: silver;
+    float: left;
+    width: 160px;
+    height: auto;
+    max-height: 680px;
+    padding: 10px;
+}
+
+.column {
+    min-width: fit-content;
+}
+
+.column-modal {
+    width: 280px;
+    height: 420px;
+    background: white;
+}
+
+.column:hover, .column-modal:hover {
+    background-color: whitesmoke;
+    border-color: silver;
+    cursor: pointer;
+}
+
+
+.numePoke {
+    margin: 0;
+    font-size: 1em;
+    background-color: rgba(85, 92, 99, 0.952);
+    width: 22%;
+    margin-right: auto;
+    color: white;
+    border-radius: 0.4em;
+}
+
+.namePoke {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(85, 92, 99, 0.952);
+    border-radius: 0.4em;
+    color: rgb(246, 246, 255);
+    margin: 0.5em;
+}
+
+.genPoke {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(236, 80, 53, 0.952);
+    border-radius: 0.4em;
+    color: rgb(254, 255, 251);
+    margin: 0.5em;
+}
+
+.detalles {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 56px;
+    padding-left: 500px;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.detalles-content {
+    padding: 20px;
+    width: 325px;
+    height: 520px;
+    background: #a292ad  ;
+    border: 2px solid #877196 ;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaaaaa;
+    height: auto;
+    width: auto;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*footer*/
+.footer2 {
+    font-size: 20px;
+    font-family:fantasy;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#6EA4BB;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer1{
+    font-size: 20px;
+    font-family:fantasy;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#6EA4BB;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
