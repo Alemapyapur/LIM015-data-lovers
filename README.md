@@ -1,4 +1,4 @@
-# POKEDEX APP &nbsp; ![](https://komarev.com/ghpvc/?username=datalovers&color=blueviolet)
+# POKEDEX APP  &nbsp; ![](https://komarev.com/ghpvc/?username=alemapyapur-datalovers&color=blueviolet)
 
 ## Índice
 
